@@ -1,4 +1,5 @@
 from pygame import *
+font.init()
 window = display.set_mode((700,500))
 display.set_caption('ping')
 FPS = 40
@@ -52,7 +53,7 @@ while run:
         if e.type == QUIT:    
             run = False
         if move_r:
-        platform.rect.x += 5
+            platform.rect.x += 5
         if move_l:
             platform.rect.x -= 5
         ball.rect.x += speed_x
